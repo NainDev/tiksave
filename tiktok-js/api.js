@@ -5,7 +5,7 @@ class TikTokAPI {
 
     async downloadVideo(url) {
         try {
-            const response = await fetch(`${this.BASE_URL}/api/download?url=${encodeURIComponent(url)}`);
+            const response = await fetch(`https://api.botcahx.eu.org/api/dowloader/tiktok?url=${text}&apikey=mS4bOjqu`);
             const data = await response.json();
             
             if (data.status === 200) {
