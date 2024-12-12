@@ -1,11 +1,11 @@
 class TikTokAPI {
     constructor() {
-        this.BASE_URL = 'https://api.tiklydown.eu.org';
+        this.BASE_URL = 'https://api.botcahx.eu.org';
     }
 
     async downloadVideo(url) {
         try {
-            const response = await fetch(`${this.BASE_URL}/download?url=${encodeURIComponent(url)}`);
+            const response = await fetch(`${this.BASE_URL}/api/download?url=${encodeURIComponent(url)}`);
             const data = await response.json();
             
             if (data.status === 200) {
