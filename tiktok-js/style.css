@@ -1,0 +1,143 @@
+
+:root {
+    --primary-color: #ee1d52;
+    --secondary-color: #25f4ee;
+    --background-color: #f8f8f8;
+    --text-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.app-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    min-height: 100vh;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.navbar {
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.nav-links a.active {
+    opacity: 1;
+    font-weight: bold;
+}
+
+#app-content {
+    padding: 1rem;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+input {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 0.75rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hasil Download/Profil */
+.result-container {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.avatar, .avatar-large {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.video-result video {
+    max-width: 100%;
+    margin: 1rem 0;
+}
+
+.download-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--secondary-color);
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+.home-page .features {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.home-page .feature {
+    text-align: center;
+    max-width: 200px;
+}
+
+.home-page .icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
